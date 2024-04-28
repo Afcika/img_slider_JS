@@ -1,0 +1,49 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+img{
+  width: 500px;
+  height: 300px;
+}
+
+.slider{
+  overflow: hidden;
+}
+.slider img{
+  display: none;
+}
+
+img.displayslide{
+  display: block;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+button{
+  font-size: 2rem;
+  padding: 5px 15px;
+  background-color: white;
+  border-radius: 5px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.prev{
+  position: absolute;
+  top: 48%;
+  left: 35%;
+}
+
+.next{
+  position: absolute;
+  top: 48%;
+  right: 35%;
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to{opacity: 1}
+}
